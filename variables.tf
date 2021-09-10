@@ -58,11 +58,13 @@ variable "install_steam" {
 }
 
 variable "use_spot" {
-  type    = bool
-  default = true
+  type        = bool
+  default     = true
+  description = "Use 100% spot instances in the autoscaling group"
 }
 
 variable "power_on" {
-  type    = bool
-  default = true
+  type        = bool
+  default     = true
+  description = "True to scale to 1 instance, false to 0"
 }

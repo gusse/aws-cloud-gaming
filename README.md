@@ -33,10 +33,10 @@ Forked https://github.com/badjware/aws-cloud-gaming/ and modified for my needs.
 | install\_parsec | Download and run Parsec-Cloud-Preparation-Tool on first login | `bool` | `true` | no |
 | install\_steam | Download and install Valve Steam on first boot | `bool` | `true` | no |
 | instance\_type | The aws instance type, Choose one with a CPU/GPU that fits your need: https://aws.amazon.com/ec2/instance-types/#Accelerated_Computing | `string` | `"g4dn.xlarge"` | no |
-| power\_on | n/a | `bool` | `true` | no |
+| power\_on | True to scale to 1 instance, false to 0 | `bool` | `true` | no |
 | resource\_name | Name with which to prefix resources in AWS | `string` | `"cloud-gaming"` | no |
 | root\_block\_device\_size\_gb | The size of the root block device (C:\ drive) attached to the instance | `number` | `120` | no |
-| use\_spot | n/a | `bool` | `true` | no |
+| use\_spot | Use 100% spot instances in the autoscaling group | `bool` | `true` | no |
 
 ## Outputs
 
