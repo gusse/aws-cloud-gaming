@@ -134,6 +134,10 @@ choco install awstools.powershell
 install-parsec-cloud-preparation-tool
 %{ endif }
 
+%{ if var.install_nice-dcv }
+choco install nice-dcv-server
+%{ endif }
+
 install-admin-password
 
 %{ if var.install_auto_login }
@@ -146,22 +150,6 @@ install-graphic-driver
 
 %{ if var.install_steam }
 choco install steam
-%{ endif }
-
-%{ if var.install_gog_galaxy }
-choco install goggalaxy
-%{ endif }
-
-%{ if var.install_uplay }
-choco install uplay
-%{ endif }
-
-%{ if var.install_origin }
-choco install origin
-%{ endif }
-
-%{ if var.install_epic_games_launcher }
-choco install epicgameslauncher
 %{ endif }
 
 </powershell>
